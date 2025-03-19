@@ -51,7 +51,7 @@ The admin dashboard includes:
 ## 🎯 File Structure Breakdown
 
 ```plaintext
-driving-school-management/
+Amiran/
 ├── backend/
 │   ├── config/
 │   │   ├── database.js        # Database connection setup
