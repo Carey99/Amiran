@@ -50,6 +50,47 @@ The admin dashboard includes:
 
 ## 🎯 File Structure Breakdown
 
-📦 driving-school-management ┣ 📂 backend ┃ ┣ 📂 config ┃ ┃ ┣ 📄 database.js # Database connection setup ┃ ┃ ┣ 📄 redis.js # Caching configuration ┃ ┣ 📂 controllers ┃ ┃ ┣ 📄 studentController.js # Handles student-related logic ┃ ┃ ┣ 📄 adminController.js # Manages admin functionalities ┃ ┃ ┣ 📄 instructorController.js # Manages instructor operations ┃ ┣ 📂 models ┃ ┃ ┣ 📄 studentModel.js # Defines student schema ┃ ┃ ┣ 📄 adminModel.js # Defines admin schema ┃ ┃ ┣ 📄 instructorModel.js # Defines instructor schema ┃ ┣ 📂 routes ┃ ┃ ┣ 📄 studentRoutes.js # Endpoints for student interactions ┃ ┃ ┣ 📄 adminRoutes.js # Endpoints for admin functionalities ┃ ┃ ┣ 📄 instructorRoutes.js # Endpoints for instructor actions ┃ ┣ 📄 server.js # Main server entry point ┣ 📂 frontend ┃ ┣ 📂 components ┃ ┃ ┣ 📂 dashboard ┃ ┃ ┃ ┣ 📄 AdminDashboard.jsx ┃ ┃ ┃ ┣ 📄 InstructorDashboard.jsx ┃ ┃ ┃ ┣ 📄 StudentDashboard.jsx ┃ ┃ ┣ 📂 payments ┃ ┃ ┃ ┣ 📄 PaymentForm.jsx ┃ ┃ ┃ ┣ 📄 Receipt.jsx ┃ ┣ 📂 pages ┃ ┃ ┣ 📄 Login.jsx ┃ ┃ ┣ 📄 Register.jsx ┃ ┃ ┣ 📄 Home.jsx ┃ ┃ ┣ 📄 Lessons.jsx ┃ ┃ ┣ 📄 Payments.jsx ┃ ┣ 📄 App.js # Main React component ┣ 📂 public ┃ ┣ 📄 index.html # HTML entry point ┃ ┣ 📂 assets # Contains images, logos, etc. ┣ 📄 .env # Environment variables ┣ 📄 package.json # Project dependencies ┣ 📄 README.md # Documentation
+```plaintext
+driving-school-management/
+├── backend/
+│   ├── config/
+│   │   ├── database.js        # Database connection setup
+│   │   ├── redis.js           # Caching configuration
+│   ├── controllers/
+│   │   ├── studentController.js    # Handles student-related logic
+│   │   ├── adminController.js      # Manages admin functionalities
+│   │   ├── instructorController.js # Manages instructor operations
+│   ├── models/
+│   │   ├── studentModel.js    # Defines student schema
+│   │   ├── adminModel.js      # Defines admin schema
+│   │   ├── instructorModel.js # Defines instructor schema
+│   ├── routes/
+│   │   ├── studentRoutes.js   # Endpoints for student interactions
+│   │   ├── adminRoutes.js     # Endpoints for admin functionalities
+│   │   ├── instructorRoutes.js # Endpoints for instructor actions
+│   ├── server.js             # Main server entry point
+├── frontend/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   │   ├── AdminDashboard.jsx
+│   │   │   ├── InstructorDashboard.jsx
+│   │   │   ├── StudentDashboard.jsx
+│   │   ├── payments/
+│   │   │   ├── PaymentForm.jsx
+│   │   │   ├── Receipt.jsx
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── Home.jsx
+│   │   ├── Lessons.jsx
+│   │   ├── Payments.jsx
+│   ├── App.js                 # Main React component
+├── public/
+│   ├── index.html             # HTML entry point
+│   ├── assets/                # Contains images, logos, etc.
+├── .env                       # Environment variables
+├── package.json               # Project dependencies
+├── README.md                  # Documentation
+```
 ---
 📢 *This document will be updated as more features are developed. For contributions, refer to the GitHub repository guidelines.*
