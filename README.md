@@ -50,57 +50,6 @@ The admin dashboard includes:
 
 ## 🎯 File Structure Breakdown
 
-📂 Amiran
-│── 📄 README.md            # Project Documentation (this file)
-│── 📄 .gitignore           # Files to ignore in Git versioning
-│── 📄 package.json         # Dependencies and scripts (for Node.js)
-│── 📄 server.js            # Entry point for backend
-│
-├── 📂 config               # Configuration files
-│   ├── 📄 db.js            # Database connection setup (MongoDB Atlas)
-│   ├── 📄 env.js           # Environment variables configuration
-│
-├── 📂 models               # Mongoose schemas
-│   ├── 📄 User.js          # User schema (Admin, Instructor, Student)
-│   ├── 📄 Lesson.js        # Lesson schema (Tracks student progress)
-│   ├── 📄 Payment.js       # Payment schema (Tracks transactions)
-│
-├── 📂 routes               # API Routes
-│   ├── 📄 authRoutes.js    # Authentication and authorization routes
-│   ├── 📄 studentRoutes.js # Student-related actions (lessons, payments)
-│   ├── 📄 adminRoutes.js   # Admin dashboard actions
-│   ├── 📄 instructorRoutes.js # Instructor dashboard actions
-│
-├── 📂 controllers          # Business logic for routes
-│   ├── 📄 authController.js    # Handles login, registration
-│   ├── 📄 studentController.js # Handles student actions
-│   ├── 📄 adminController.js   # Handles admin actions
-│   ├── 📄 instructorController.js # Handles instructor actions
-│
-├── 📂 middleware           # Middleware functions
-│   ├── 📄 authMiddleware.js  # Authentication & role-based access control
-│   ├── 📄 errorHandler.js    # Global error handling
-│
-├── 📂 utils                # Utility functions
-│   ├── 📄 logger.js         # Logging system
-│   ├── 📄 paymentUtils.js   # Payment processing logic
-│   ├── 📄 emailService.js   # Email notifications
-│
-├── 📂 public               # Static assets (if needed)
-│   ├── 📂 images           # Store images if necessary
-│   ├── 📂 styles           # CSS or frontend assets
-│
-├── 📂 views                # Frontend templates (if using SSR)
-│   ├── 📄 dashboard.ejs    # Admin dashboard page
-│   ├── 📄 login.ejs        # Login page
-│
-├── 📂 logs                 # System logs (optional)
-│   ├── 📄 access.log       # Access logs
-│   ├── 📄 error.log        # Error logs
-│
-└── 📂 tests                # Automated tests
-    ├── 📄 auth.test.js     # Tests authentication logic
-    ├── 📄 student.test.js  # Tests student functionality
-    ├── 📄 admin.test.js    # Tests admin functionality
+📦 driving-school-management ┣ 📂 backend ┃ ┣ 📂 config ┃ ┃ ┣ 📄 database.js # Database connection setup ┃ ┃ ┣ 📄 redis.js # Caching configuration ┃ ┣ 📂 controllers ┃ ┃ ┣ 📄 studentController.js # Handles student-related logic ┃ ┃ ┣ 📄 adminController.js # Manages admin functionalities ┃ ┃ ┣ 📄 instructorController.js # Manages instructor operations ┃ ┣ 📂 models ┃ ┃ ┣ 📄 studentModel.js # Defines student schema ┃ ┃ ┣ 📄 adminModel.js # Defines admin schema ┃ ┃ ┣ 📄 instructorModel.js # Defines instructor schema ┃ ┣ 📂 routes ┃ ┃ ┣ 📄 studentRoutes.js # Endpoints for student interactions ┃ ┃ ┣ 📄 adminRoutes.js # Endpoints for admin functionalities ┃ ┃ ┣ 📄 instructorRoutes.js # Endpoints for instructor actions ┃ ┣ 📄 server.js # Main server entry point ┣ 📂 frontend ┃ ┣ 📂 components ┃ ┃ ┣ 📂 dashboard ┃ ┃ ┃ ┣ 📄 AdminDashboard.jsx ┃ ┃ ┃ ┣ 📄 InstructorDashboard.jsx ┃ ┃ ┃ ┣ 📄 StudentDashboard.jsx ┃ ┃ ┣ 📂 payments ┃ ┃ ┃ ┣ 📄 PaymentForm.jsx ┃ ┃ ┃ ┣ 📄 Receipt.jsx ┃ ┣ 📂 pages ┃ ┃ ┣ 📄 Login.jsx ┃ ┃ ┣ 📄 Register.jsx ┃ ┃ ┣ 📄 Home.jsx ┃ ┃ ┣ 📄 Lessons.jsx ┃ ┃ ┣ 📄 Payments.jsx ┃ ┣ 📄 App.js # Main React component ┣ 📂 public ┃ ┣ 📄 index.html # HTML entry point ┃ ┣ 📂 assets # Contains images, logos, etc. ┣ 📄 .env # Environment variables ┣ 📄 package.json # Project dependencies ┣ 📄 README.md # Documentation
 ---
 📢 *This document will be updated as more features are developed. For contributions, refer to the GitHub repository guidelines.*
