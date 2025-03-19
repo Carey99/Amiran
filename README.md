@@ -1,4 +1,4 @@
-# 🚗 Driving School Management System Documentation
+# 🚗 Amiran Driving School Management System Documentation
 
 ## 📌 Overview
 This documentation covers the structure and functionality of the Driving School Management System, designed to facilitate student registration, lesson tracking, and payments, while providing an administrative dashboard for managing instructors, students, and courses.
@@ -49,4 +49,4 @@ The admin dashboard includes:
 - **📊 Advanced Reporting**: Data insights on student progress and financials.
 
 ---
-📢 *This document will be updated as more features are developed. For contributions, refer to the GitHub repository guidelines.*s
+📢 *This document will be updated as more features are developed. For contributions, refer to the GitHub repository guidelines.*
