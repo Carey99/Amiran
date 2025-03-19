@@ -1,4 +1,4 @@
-# 🚗 Amiran Driving School Management System Documentation
+# 🚗 Driving School Management System Documentation
 
 ## 📌 Overview
 This documentation covers the structure and functionality of the Driving School Management System, designed to facilitate student registration, lesson tracking, and payments, while providing an administrative dashboard for managing instructors, students, and courses.
@@ -33,4 +33,20 @@ The admin dashboard includes:
   - **🟢 Current Students**: Displays active students with course progress and balance.
   - **✅ Concluded Students**: Displays students who have completed their courses.
 - **👩‍🏫 Instructor Management**:
-  - Click
+  - Clicking **Add (+)** opens a form for entering instructor details.
+  - Instructors can be assigned to specific courses.
+- **💰 Payment Management**:
+  - Instructors can trigger M-Pesa payment prompts for students with outstanding balances.
+  - Payments are reflected in the database, reducing the student’s balance accordingly.
+  - If a student has an unpaid balance from **Lesson 13 onwards**, they are **locked out of subsequent lessons** until payment is made.
+- **🖨️ Receipt Generation**:
+  - A **printable receipt** is generated for each lesson upon marking it as done.
+  - Includes student details, lesson number, date, and payment confirmation.
+
+## 🚀 Future Enhancements
+- **🏫 Branch Management**: Additional school branches with separate admins.
+- **🔔 Automated Notifications**: Reminders for pending payments and lesson schedules.
+- **📊 Advanced Reporting**: Data insights on student progress and financials.
+
+---
+📢 *This document will be updated as more features are developed. For contributions, refer to the GitHub repository guidelines.*s
